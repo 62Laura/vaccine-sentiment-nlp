@@ -1,0 +1,13 @@
+# Related Work
+
+## Vaccine sentiment and stance on Twitter
+
+To et al. (2021) evaluated Bi-LSTM with pre-trained GloVe embeddings, BERT, SVM and Naive Bayes for identifying anti-vaccination tweets in about 20,000 labelled tweets. BERT clearly outperformed all other models (F1 = 95.5%), while the Bi-LSTM reached 45.5% and the linear SVM 31.2%. Notably, the SVM achieved the highest accuracy (92.3%) but very low precision, illustrating that accuracy can be misleading when the target class is a small minority (9.1% of tweets). Consequently, the authors adopted F1 as their primary metric. This finding motivates our use of macro-F1 and class weighting, given that negative tweets make up only about 10% of our dataset. However, their task was binary stance detection rather than three-class sentiment analysis, so their scores are not directly comparable to ours.
+
+Jain et al. (2023) compared five classical classifiers (SVM, Naive Bayes, Logistic Regression, Decision Tree, Random Forest) using Bag-of-Words and TF-IDF features, alongside LSTM and BERT, on about 3,700 positive and negative COVID-19 vaccine tweets. TF-IDF with a linear SVM was the strongest classical approach (accuracy 88.8%, AUC 0.95), and BERT was the best overall (90.42%), only about 1.6 percentage points above the SVM. Their LSTM reached 88.26%, and its validation accuracy plateaued while training accuracy kept rising, suggesting overfitting on a small dataset. These results support including TF-IDF + SVM as a strong baseline and suggest that gains from neural models may be modest. An important difference is that the authors removed the neutral class, whereas neutral tweets are the largest class (49%) in our data, so our task is harder and the results are not directly comparable.
+
+## References
+
+To, Q. G., To, K. G., Huynh, V.-A. N., Nguyen, N. T. Q., Ngo, D. T. N., Alley, S. J., Tran, A. N. Q., Tran, A. N. P., Pham, N. T. T., Bui, T. X., & Vandelanotte, C. (2021). Applying machine learning to identify anti-vaccination tweets during the COVID-19 pandemic. *International Journal of Environmental Research and Public Health, 18*(8), 4069. https://doi.org/10.3390/ijerph18084069
+
+Jain, T., Verma, V. K., Sharma, A. K., Saini, B., Purohit, N., Bhavika, Mahdin, H., Ahmad, M., Darman, R., Haw, S.-C., Shaharudin, S. M., & Arshad, M. S. (2023). Sentiment analysis on COVID-19 vaccine tweets using machine learning and deep learning algorithms. *International Journal of Advanced Computer Science and Applications, 14*(5), 32–41. https://doi.org/10.14569/IJACSA.2023.0140504
