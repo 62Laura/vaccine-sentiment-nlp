@@ -1,0 +1,2 @@
+model_name,accuracy,macro_f1,precision_macro,recall_macro,train_time_s,notes
+TFIDF_LogisticRegression,0.7273333333333334,0.6640066450735064,0.6538896662504667,0.6921631376609775,1.52,"TF-IDF unigrams+bigrams, 10k features, class_weight=balanced"
