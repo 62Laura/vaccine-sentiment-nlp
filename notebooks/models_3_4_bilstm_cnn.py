@@ -1,10 +1,4 @@
-# %% [markdown]
-# # Models 3 & 4: BiLSTM and Text CNN
-# Follows HANDOFF.md: same train/val/test CSVs, `text_clean` input, macro-F1 primary,
-# one row appended per model to results/metrics_summary.csv, confusion matrix per model.
 
-# %% Setup
-# !pip install -q torch scikit-learn pandas matplotlib   # uncomment in Colab if needed
 import os, time, random, copy
 from collections import Counter
 
