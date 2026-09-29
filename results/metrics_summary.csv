@@ -1,2 +1,3 @@
 model_name,accuracy,macro_f1,precision_macro,recall_macro,train_time_s,notes
 TFIDF_LogisticRegression,0.7273333333333334,0.6640066450735064,0.6538896662504667,0.6921631376609775,1.52,"TF-IDF unigrams+bigrams, 10k features, class_weight=balanced"
+tfidf_linear_svm,0.717,0.634,0.633,0.635,0.44,"best params: {'svm__C': 0.1, 'tfidf__max_features': None, 'tfidf__min_df': 2, 'tfidf__ngram_range': (1, 1)}; grid search 88s"
