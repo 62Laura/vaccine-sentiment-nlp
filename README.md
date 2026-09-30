@@ -80,7 +80,7 @@ Notebooks for the neural models (BiLSTM, Text CNN, DistilBERT) were run on Googl
 
 See `contribution_tracker.md` for a full breakdown. In short:
 
-- **Laura Celine** — Data cleaning, EDA, train/val/test split, TF-IDF + Logistic Regression baseline
+- **Laura Celine Ishimwe** — Data cleaning, EDA, train/val/test split, TF-IDF + Logistic Regression baseline
 - **Sonia Uwase** — Literature review, TF-IDF + Linear SVM baseline
 - **Heroine Mutumwinka** — BiLSTM and Text CNN models
 - **Hasbiyallah Umutoniwabo** — DistilBERT fine-tuning, model comparison, results collection
