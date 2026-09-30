@@ -36,7 +36,7 @@ DistilBERT achieved the best accuracy and macro F1 overall, though only slightly
 
 ## Repo Structure
 
-​```
+```
 vaccine-sentiment-nlp/
 ├── README.md
 ├── HANDOFF.md                              contract notes for the group
@@ -66,7 +66,7 @@ vaccine-sentiment-nlp/
 ├── figures/
 │   └── eda/                                class distribution, length distribution, etc.
 └── contribution_tracker.md
-​```
+```
 
 ## Setup
 
