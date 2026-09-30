@@ -3,3 +3,4 @@ TFIDF_LogisticRegression,0.7273333333333334,0.6640066450735064,0.653889666250466
 tfidf_linear_svm,0.717,0.634,0.633,0.635,0.44,"best params: {'svm__C': 0.1, 'tfidf__max_features': None, 'tfidf__min_df': 2, 'tfidf__ngram_range': (1, 1)}; grid search 88s"
 model3_bilstm,0.712,0.638,0.632,0.647,194.66,"BiLSTM(128) max-pool; emb=100 random init, min_freq=2, max_len=25, class-weighted loss, early stop on val macro-F1"
 model4_textcnn,0.671,0.603,0.596,0.625,74.13,"CNN k=2,3,4 x100 filters; emb=100 random init, min_freq=2, max_len=25, class-weighted loss, early stop on val macro-F1"
+model5_distilbert,0.7546666666666667,0.6686173106839973,0.6786437843371185,0.6613211191300437,146.68,"distilbert-base-uncased, max_len=64, batch=16, lr=2e-5, 3 epochs, best model on val f1_macro"
