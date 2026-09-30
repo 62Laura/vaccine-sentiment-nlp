@@ -36,36 +36,37 @@ DistilBERT achieved the best accuracy and macro F1 overall, though only slightly
 
 ## Repo Structure
 
+​```
 vaccine-sentiment-nlp/
 ├── README.md
-├── HANDOFF.md contract notes for the group
+├── HANDOFF.md                              contract notes for the group
 ├── requirements.txt
 ├── data/
-│ ├── raw/
-│ │ └── Train.csv original Zindi data (10,001 rows, includes label + agreement)
-│ └── processed/
-│ ├── val.csv cleaned validation set with labels
-│ └── test.csv cleaned test set with labels
+│   ├── raw/
+│   │   └── Train.csv                       original Zindi data (10,001 rows, includes label + agreement)
+│   └── processed/
+│       ├── val.csv                         cleaned validation set with labels
+│       └── test.csv                        cleaned test set with labels
 ├── notebooks/
-│ ├── 01_data_exploration.ipynb EDA and data cleaning
-│ ├── 02_related_work.md literature review
-│ ├── 03b_model2_baseline.ipynb TF-IDF + SVM
-│ ├── models_3_4_bilstm_cnn.py BiLSTM and Text CNN
-│ └── 03e_model5_distilbert.ipynb DistilBERT fine-tuning
+│   ├── 01_data_exploration.ipynb           EDA and data cleaning
+│   ├── 02_related_work.md                  literature review
+│   ├── 03b_model2_baseline.ipynb           TF-IDF + SVM
+│   ├── models_3_4_bilstm_cnn.py            BiLSTM and Text CNN
+│   └── 03e_model5_distilbert.ipynb         DistilBERT fine-tuning
 ├── results/
-│ ├── metrics_summary.csv one row per model, same columns
-│ ├── model_comparison_macro_f1.png bar chart comparing all 5 models
-│ ├── svm_errors.csv misclassified examples from SVM
-│ └── confusion_matrices/
-│ ├── cm_model1.png
-│ ├── tfidf_linear_svm.png
-│ ├── model3_bilstm.png
-│ ├── model4_textcnn.png
-│ └── model5_distilbert.png
+│   ├── metrics_summary.csv                 one row per model, same columns
+│   ├── model_comparison_macro_f1.png       bar chart comparing all 5 models
+│   ├── svm_errors.csv                      misclassified examples from SVM
+│   └── confusion_matrices/
+│       ├── cm_model1.png
+│       ├── tfidf_linear_svm.png
+│       ├── model3_bilstm.png
+│       ├── model4_textcnn.png
+│       └── model5_distilbert.png
 ├── figures/
-│ └── eda/ class distribution, length distribution, etc.
+│   └── eda/                                class distribution, length distribution, etc.
 └── contribution_tracker.md
-
+​```
 
 ## Setup
 
